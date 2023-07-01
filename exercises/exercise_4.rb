@@ -21,7 +21,7 @@ end
 
 @womens_stores = Store.where("womens_apparel = ? AND annual_revenue < ?", true,  1000000)
 
-puts "\nwomens apparel list"
+puts "\nwomens apparel stores list generating less than $1M"
 @womens_stores.each do |store|
   puts "store Name: #{store.name}, Annual revenue: #{store.annual_revenue}"
 end
